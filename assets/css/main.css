@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    body {
+        /* Theme goes here */
+        @apply text-slate-700;
+    }
+
+    h1, h2 , h3 {
+        @apply font-bold font-body leading-10;
+    }
+
+    h1 {
+        @apply text-6xl;
+    }
+
+    h2 {
+        @apply text-5xl;
+    }
+
+    h3 {
+        @apply text-4xl;
+    }
+
+    .text-body-large, .text-body-normal, .text-body-small {
+        @apply font-heading leading-10 font-normal;
+    }
+
+    .text-body-large {
+        @apply text-2xl;
+    }
+
+    .text-body-normal {
+        /* leading-loose */
+        @apply text-base;
+    }
+
+    .text-body-small {
+        @apply text-xs;
+    }
+
+    .button {
+        @apply font-body font-bold text-base;
+    }
+
+    .nav-link {
+        @apply font-['Nunito-Sans'] font-normal text-base;
+    }
+}
