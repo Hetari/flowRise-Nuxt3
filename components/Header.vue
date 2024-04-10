@@ -14,7 +14,7 @@
 
     <ul class="flex gap-10">
       <li v-for="link in navLinks" :key="link.name">
-        <NuxtLink :to="link.path" class="text-base p-3 -m-3">
+        <NuxtLink :to="link.path" class="nav-link p-3 -m-3">
           {{ link.name }}
         </NuxtLink>
       </li>

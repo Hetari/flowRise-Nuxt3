@@ -14,8 +14,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["Nunito", "sans-serif"],
-        body: ["Nunito Sans", "sans-serif"],
+        heading: ["Nunito Variable", "sans-serif"],
+        body: ["Nunito Sans Variable", "sans-serif"],
+      },
+      colors: {
+        primary: "#334155",
+        secondary: "#0E7490",
       },
     },
   },
