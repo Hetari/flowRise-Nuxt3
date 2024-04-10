@@ -26,7 +26,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: "#users-said",
       start: "top 80%",
-      end: "bottom 40%",
+      end: "bottom 70%",
       scrub: true,
     },
     duration: 1,

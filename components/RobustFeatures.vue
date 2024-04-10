@@ -1,10 +1,13 @@
 <template>
   <section
     id="robust-features"
-    class="space-y-10 opacity-0 translate-y-20 h-screen max-w-[1400px] m-auto"
+    class="space-y-10 opacity-0 translate-y-20 max-w-[1400px] m-auto"
   >
     <h2 class="text-body-normal text-center">Robust features</h2>
-    <section class="flex justify-evenly items-center gap-10">
+
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center"
+    >
       <div
         class="flex flex-col md:w-64 justify-center md:items-start items-center gap-5"
       >
@@ -107,7 +110,7 @@
             stroke-width="4.99091"
             stroke-linecap="round"
           />
-          <g id="Vector_8">
+          <g id="analytics">
             <path
               d="M66.5 69.3333V44.3333C66.5 41.5719 64.2614 39.3333 61.5 39.3333H51.5C48.7386 39.3333 46.5 41.5719 46.5 44.3333V69.3333"
               stroke="#0891B2"
@@ -146,32 +149,34 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M23.1666 22.6667H49.8333V49.3333H23.1666V22.6667Z"
-            stroke="#0891B2"
-            stroke-opacity="0.5"
-            stroke-width="4.99091"
-          />
-          <path
-            d="M49.8333 49.3366L59.8333 49.335C65.3561 49.3342 69.834 53.8106 69.8349 59.3335C69.8357 64.8563 65.3593 69.3342 59.8364 69.335C54.3136 69.3359 49.8357 64.8595 49.8349 59.3366L49.8333 49.3366Z"
-            stroke="#0891B2"
-            stroke-width="4.99091"
-          />
-          <path
-            d="M23.1698 49.3366L13.1698 49.335C7.64696 49.3342 3.1691 53.8106 3.16823 59.3335C3.16736 64.8563 7.64381 69.3342 13.1667 69.335C18.6895 69.3359 23.1674 64.8595 23.1682 59.3366L23.1698 49.3366Z"
-            stroke="#0891B2"
-            stroke-width="4.99091"
-          />
-          <path
-            d="M49.8333 22.6668L59.8333 22.6684C65.3561 22.6693 69.834 18.1928 69.8349 12.67C69.8357 7.14711 65.3593 2.66925 59.8364 2.66838C54.3136 2.66751 49.8357 7.14396 49.8349 12.6668L49.8333 22.6668Z"
-            stroke="#0891B2"
-            stroke-width="4.99091"
-          />
-          <path
-            d="M23.1698 22.6668L13.1698 22.6684C7.64696 22.6693 3.1691 18.1928 3.16823 12.67C3.16736 7.14711 7.64381 2.66925 13.1667 2.66838C18.6895 2.66751 23.1674 7.14396 23.1682 12.6668L23.1698 22.6668Z"
-            stroke="#0891B2"
-            stroke-width="4.99091"
-          />
+          <g id="integrations">
+            <path
+              d="M23.1666 22.6667H49.8333V49.3333H23.1666V22.6667Z"
+              stroke="#0891B2"
+              stroke-opacity="0.5"
+              stroke-width="4.99091"
+            />
+            <path
+              d="M49.8333 49.3366L59.8333 49.335C65.3561 49.3342 69.834 53.8106 69.8349 59.3335C69.8357 64.8563 65.3593 69.3342 59.8364 69.335C54.3136 69.3359 49.8357 64.8595 49.8349 59.3366L49.8333 49.3366Z"
+              stroke="#0891B2"
+              stroke-width="4.99091"
+            />
+            <path
+              d="M23.1698 49.3366L13.1698 49.335C7.64696 49.3342 3.1691 53.8106 3.16823 59.3335C3.16736 64.8563 7.64381 69.3342 13.1667 69.335C18.6895 69.3359 23.1674 64.8595 23.1682 59.3366L23.1698 49.3366Z"
+              stroke="#0891B2"
+              stroke-width="4.99091"
+            />
+            <path
+              d="M49.8333 22.6668L59.8333 22.6684C65.3561 22.6693 69.834 18.1928 69.8349 12.67C69.8357 7.14711 65.3593 2.66925 59.8364 2.66838C54.3136 2.66751 49.8357 7.14396 49.8349 12.6668L49.8333 22.6668Z"
+              stroke="#0891B2"
+              stroke-width="4.99091"
+            />
+            <path
+              d="M23.1698 22.6668L13.1698 22.6684C7.64696 22.6693 3.1691 18.1928 3.16823 12.67C3.16736 7.14711 7.64381 2.66925 13.1667 2.66838C18.6895 2.66751 23.1674 7.14396 23.1682 12.6668L23.1698 22.6668Z"
+              stroke="#0891B2"
+              stroke-width="4.99091"
+            />
+          </g>
         </svg>
 
         <h3 class="!font-normal">Integrations</h3>
@@ -193,17 +198,19 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M35.859 26.2369L26 36L16.141 26.2369C6.39933 16.59 1.52851 11.7666 2.89213 7.60495C3.00935 7.24723 3.15491 6.89923 3.32746 6.56421C5.33483 2.66666 12.2232 2.66666 26 2.66666C39.7767 2.66666 46.6651 2.66666 48.6725 6.56421C48.845 6.89923 48.9906 7.24723 49.1078 7.60495C50.4714 11.7666 45.6006 16.59 35.859 26.2369Z"
-            stroke="#0891B2"
-            stroke-width="4.99091"
-          />
-          <path
-            d="M16.141 45.7631L26 36L35.8589 45.7631C45.6006 55.41 50.4714 60.2334 49.1078 64.395C48.9906 64.7528 48.845 65.1008 48.6725 65.4358C46.6651 69.3333 39.7767 69.3333 26 69.3333C12.2232 69.3333 5.33483 69.3333 3.32746 65.4358C3.15491 65.1008 3.00935 64.7528 2.89213 64.395C1.52851 60.2334 6.39932 55.41 16.1409 45.7631L16.141 45.7631Z"
-            stroke="#0891B2"
-            stroke-opacity="0.5"
-            stroke-width="4.99091"
-          />
+          <g id="focus">
+            <path
+              d="M35.859 26.2369L26 36L16.141 26.2369C6.39933 16.59 1.52851 11.7666 2.89213 7.60495C3.00935 7.24723 3.15491 6.89923 3.32746 6.56421C5.33483 2.66666 12.2232 2.66666 26 2.66666C39.7767 2.66666 46.6651 2.66666 48.6725 6.56421C48.845 6.89923 48.9906 7.24723 49.1078 7.60495C50.4714 11.7666 45.6006 16.59 35.859 26.2369Z"
+              stroke="#0891B2"
+              stroke-width="4.99091"
+            />
+            <path
+              d="M16.141 45.7631L26 36L35.8589 45.7631C45.6006 55.41 50.4714 60.2334 49.1078 64.395C48.9906 64.7528 48.845 65.1008 48.6725 65.4358C46.6651 69.3333 39.7767 69.3333 26 69.3333C12.2232 69.3333 5.33483 69.3333 3.32746 65.4358C3.15491 65.1008 3.00935 64.7528 2.89213 64.395C1.52851 60.2334 6.39932 55.41 16.1409 45.7631L16.141 45.7631Z"
+              stroke="#0891B2"
+              stroke-opacity="0.5"
+              stroke-width="4.99091"
+            />
+          </g>
         </svg>
 
         <h3 class="!font-normal">Focus Timer</h3>
@@ -222,18 +229,61 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const svgSelectors = [
+  "#Calendar #lines path:nth-child(1)",
+  "#analytics",
+  "#integrations",
+  "#focus path",
+];
+
 onMounted(() => {
+  // svgSelectors.forEach((selector) => {
+  //   gsap.set(selector, {
+  //     strokeDasharray: "0% 100%",
+  //     strokeDashoffset: "100%",
+  //   });
+  // });
+
   gsap.to("#robust-features", {
     opacity: 1,
     y: 0,
     scrollTrigger: {
       trigger: "#robust-features",
-      start: "top 70%",
-      end: "bottom 50%",
+      start: "top 90%",
+      end: "bottom 70%",
       scrub: true,
     },
     duration: 1,
     ease: "circ.out",
   });
+
+  // gsap.set("#Calendar #dots", { scale: 0.5, transformOrigin: "50% 50%" });
+  // gsap.to("#Calendar #dots", {
+  //   scale: 1,
+  //   scrollTrigger: {
+  //     trigger: "#robust-features",
+  //     start: "top 90%",
+  //     end: "bottom 70%",
+  //     scrub: true,
+  //   },
+  //   duration: 1,
+  //   ease: "circ.out",
+  // });
+
+  // svgSelectors.forEach((selector) => {
+  //   gsap.to(selector, {
+  //     duration: 1,
+  //     ease: "ease-in-out",
+  //     strokeDashoffset: "100%",
+  //     strokeDasharray: "100% 0%",
+  //     scrollTrigger: {
+  //       trigger: "#robust-features",
+  //       start: "top 90%",
+  //       end: "bottom 90%",
+  //       scrub: true,
+  //     },
+  //   });
+  // });
 });
 </script>
