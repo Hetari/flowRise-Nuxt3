@@ -46,7 +46,7 @@
     }
 
     .nav-link {
-        @apply font-body font-normal text-base;
+        @apply hover:text-slate-900 transition-[color] duration-200 font-body font-normal text-base;
     }
 
     .router-link-active{
