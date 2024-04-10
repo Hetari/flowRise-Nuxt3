@@ -1,6 +1,6 @@
 <template>
   <Bounded
-    as="Header"
+    :as="isFooter ? 'footer' : 'Header'"
     class="flex items-center justify-between"
     :class="{ 'bg-white': isFooter }"
   >

@@ -1,7 +1,9 @@
 <template>
-  <section class="max-w-7xl m-auto">
+  <main class="max-w-md md:max-w-full m-auto p-12 text-center space-y-36">
     <HomeHero />
-  </section>
+
+    <UsersSaid />
+  </main>
 </template>
 
 <script setup lang="ts"></script>

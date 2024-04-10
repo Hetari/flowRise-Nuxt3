@@ -34,7 +34,7 @@
 
     .text-body-normal {
         /* leading-loose */
-        @apply text-2xl;
+        @apply font-semibold text-2xl md:text-4xl;
     }
 
     .text-body-small {

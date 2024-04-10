@@ -1,7 +1,5 @@
 <template>
-  <main
-    class="max-w-md md:max-w-full m-auto p-12 text-center flex flex-col gap-2 md:gap-4"
-  >
+  <section class="flex flex-col gap-2 md:gap-4 max-w-7xl m-auto">
     <h1 class="text-body-large text-center">
       Productivity that flows <br />with your life.
     </h1>
@@ -10,12 +8,12 @@
       your unique energy rhythms.
     </p>
 
-    <div id="intro-btn" class="pb-2 opacity-0 translate-y-20">
+    <div id="intro-btn" class="pb-4 opacity-0 translate-y-20">
       <Button />
     </div>
 
     <picture
-      class="relative mx-1 md:mx-10 hover:scale-105 transition-all duration-500 shadow-lg hover:rounded-3xl"
+      class="relative mx-1 md:mx-10 hover:scale-105 transition-all duration-500 hover:rounded-3xl"
     >
       <source
         media="(min-width: 640px)"
@@ -36,7 +34,7 @@
         class="absolute -bottom-10 md:-bottom-32 right-0 bg-gradient-to-br from-purple-700 to-cyan-900 size-40 md:size-96 blur-3xl opacity-80 md:opacity-40 z-10"
       ></div> -->
     </picture>
-  </main>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -58,6 +56,7 @@ onMounted(() => {
 
   tl.to("picture img", {
     scale: 1,
+    boxShadow: "10px 10px 50px 0 rgba(0, 0, 0, 0.2)",
     opacity: 1,
     duration: 0.5,
     ease: "sine.inOut",
