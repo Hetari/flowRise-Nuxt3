@@ -34,11 +34,11 @@
 
     .text-body-normal {
         /* leading-loose */
-        @apply font-semibold text-2xl md:text-4xl;
+        @apply font-semibold text-4xl md:text-5xl;
     }
 
     .text-body-small {
-        @apply text-xs;
+        @apply text-lg ;
     }
 
     .button {

@@ -27,7 +27,7 @@
       />
       <div
         id="glassy-bg"
-        class="absolute -top-14 md:-top-12 left-0 md:left-10 bg-gradient-to-bl from-purple-700 to-cyan-900 size-32 md:size-72 blur-3xl opacity-80 md:opacity-60 z-10"
+        class="absolute -top-14 md:-top-12 left-0 md:left-10 bg-gradient-to-l from-purple-900 to-cyan-500/80 size-32 md:size-72 blur-3xl opacity-80 md:opacity-60 z-10"
       ></div>
 
       <!-- <div

@@ -3,6 +3,10 @@
     <HomeHero />
 
     <UsersSaid class="opacity-0 translate-y-20" id="users-said" />
+
+    <section class="space-y-10">
+      <RobustFeatures />
+    </section>
   </main>
 </template>
 

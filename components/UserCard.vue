@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white rounded-3xl px-12 py-10 w-full text-start text-2xl grid content-between"
+    class="bg-white rounded-3xl px-12 py-10 w-full text-start text-2xl grid content-between shadow-md"
   >
     <p>"{{ user.comment }}"</p>
 
