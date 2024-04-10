@@ -1,9 +1,9 @@
 <template>
-  <section class="flex flex-col gap-2 md:gap-4 max-w-7xl m-auto">
+  <section class="flex flex-col gap-2 md:gap-4 max-w-[1400px] m-auto">
     <h1 class="text-body-large text-center">
       Productivity that flows <br />with your life.
     </h1>
-    <p class="text-body-normal md:max-w-xl m-auto">
+    <p class="text-body-normal md:max-w-xl m-auto !font-normal">
       Unleash your potential by harmonizing your daily tasks and habits with
       your unique energy rhythms.
     </p>
