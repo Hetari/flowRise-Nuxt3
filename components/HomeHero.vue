@@ -10,11 +10,13 @@
       your unique energy rhythms.
     </p>
 
-    <div class="pb-2">
+    <div id="intro-btn" class="pb-2 opacity-0 translate-y-20">
       <Button />
     </div>
 
-    <picture class="relative mx-1 md:mx-10">
+    <picture
+      class="relative mx-1 md:mx-10 hover:scale-105 transition-all duration-500"
+    >
       <source
         media="(min-width: 640px)"
         srcset="~/assets/images/image10-large.png"
@@ -23,9 +25,10 @@
       <img
         src="~/assets/images/image10-small.png"
         alt="Home hero image"
-        class="relative w-full z-20"
+        class="scale-85 opacity-0 relative w-full z-20"
       />
       <div
+        id="glassy-bg"
         class="absolute -top-14 md:-top-12 left-0 md:left-10 bg-gradient-to-bl from-purple-700 to-cyan-900 size-32 md:size-72 blur-3xl opacity-80 md:opacity-60 z-10"
       ></div>
 
@@ -36,4 +39,36 @@
   </main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import gsap from "gsap";
+
+const tl = gsap.timeline();
+onMounted(() => {
+  gsap.to("#glassy-bg", {
+    repeat: -1,
+    scale: 1.5,
+    y: 20,
+    x: 50,
+    duration: 10,
+    yoyo: true,
+    ease: "none",
+    repeatDelay: 1,
+    rotate: 360,
+  });
+
+  tl.to("picture img", {
+    scale: 1,
+    opacity: 1,
+    duration: 0.5,
+    ease: "sine.inOut",
+  });
+
+  tl.to("#intro-btn", {
+    opacity: 1,
+    y: 0,
+    delay: 0.2,
+    duration: 1,
+    ease: "circ.out",
+  });
+});
+</script>
