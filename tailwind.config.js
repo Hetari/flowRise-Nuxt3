@@ -21,6 +21,9 @@ export default {
         primary: "#334155",
         secondary: "#0E7490",
       },
+      cursor: {
+        // fancy: "url(~/assets/cursor.cur), pointer",
+      },
     },
   },
   plugins: [],
