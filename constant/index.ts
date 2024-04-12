@@ -6,11 +6,11 @@ type navLink = {
 const navLinks: navLink[] = [
   {
     name: "Features",
-    path: "./features",
+    path: "/features",
   },
   {
     name: "About",
-    path: "./about",
+    path: "/about",
   },
 ];
 
