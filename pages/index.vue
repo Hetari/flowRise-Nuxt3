@@ -7,6 +7,8 @@
     <RobustFeatures />
 
     <FocusSection />
+
+    <TryIt />
   </main>
 </template>
 

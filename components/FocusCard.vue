@@ -1,7 +1,7 @@
 <template>
   <section
     :id="`card${index}`"
-    class="w-[345px] text-center space-y-4 md:space-y-0 md:w-full md:flex md:even:flex-row-reverse md:items-center md:justify-around md:gap-36 md:pb-56 md:pt-32"
+    class="w-[345px] text-center space-y-4 md:space-y-0 md:w-full md:flex md:even:flex-row-reverse md:items-center md:justify-around md:gap-36 md:pb-56 md:last:pb-0 md:pt-32"
   >
     <div
       :id="`image${index}`"
