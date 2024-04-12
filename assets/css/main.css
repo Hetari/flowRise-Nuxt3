@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply overflow-x-hidden
+}
+
 @layer utilities {
     body {
         /* Theme goes here */
         @apply text-slate-700;
     }
 
-    h1, h2 , h3 {
+    h1,
+    h2,
+    h3 {
         @apply font-bold font-body leading-10;
     }
 
@@ -24,7 +30,9 @@
         @apply text-4xl;
     }
 
-    .text-body-large, .text-body-normal, .text-body-small {
+    .text-body-large,
+    .text-body-normal,
+    .text-body-small {
         @apply font-heading leading-10 font-normal;
     }
 
@@ -38,7 +46,7 @@
     }
 
     .text-body-small {
-        @apply text-lg ;
+        @apply text-lg;
     }
 
     .button {
@@ -49,7 +57,7 @@
         @apply hover:text-slate-900 transition-[color] duration-200 font-body font-normal text-base;
     }
 
-    .router-link-active{
+    .router-link-active {
         @apply text-transparent/60;
-    }   
+    }
 }
