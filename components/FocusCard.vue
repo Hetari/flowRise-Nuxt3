@@ -38,7 +38,7 @@ const props = defineProps<{
 }>();
 
 const cardImage = computed(() => {
-  return "_nuxt/assets/images/" + props.card.image;
+  return props.card.image;
 });
 
 // animation

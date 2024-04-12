@@ -15,13 +15,10 @@
     <picture
       class="relative mx-1 md:mx-10 hover:scale-105 transition-all duration-500 hover:rounded-3xl"
     >
-      <source
-        media="(min-width: 640px)"
-        srcset="~/assets/images/image10-large.png"
-      />
+      <source media="(min-width: 640px)" srcset="/image10-large.png" />
 
       <img
-        src="~/assets/images/image10-small.png"
+        src="/image10-small.png"
         alt="Home hero image"
         class="scale-85 opacity-0 relative w-full z-20"
       />
