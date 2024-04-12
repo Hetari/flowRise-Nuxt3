@@ -9,7 +9,11 @@
       id="comment-author"
       class="flex items-center gap-4 mt-8 translate-y-16 opacity-0"
     >
-      <img :src="user.image" :alt="user.name" class="size-10 rounded-full" />
+      <img
+        :src="'~/assets/images/' + user.image"
+        :alt="user.name"
+        class="size-10 rounded-full"
+      />
       <div>
         <h3 class="text-body-small !font-semibold">{{ user.name }}</h3>
         <p class="text-body-small text-[#6F6F6F]">{{ user.jobTitle }}</p>
