@@ -5,6 +5,8 @@
     <UsersSaid />
 
     <RobustFeatures />
+
+    <FocusSection />
   </main>
 </template>
 
