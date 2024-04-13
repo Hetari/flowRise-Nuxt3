@@ -1,5 +1,3 @@
-import { plugin } from "postcss";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {
@@ -58,30 +56,29 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["constant"],
   },
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          "postcss-import": {},
+          "postcss-each": {
+            plugins: {
+              beforeEach: [],
+            },
+          },
+          "postcss-custom-media": {},
+          autoprefixer: {},
+        },
+      },
+    },
 
-  // build: {
-  //   postcss: {
-  //     postcssOptions: {
-  //       plugins: {
-  //         "postcss-import": {},
-  //         "postcss-each": {
-  //           plugins: {
-  //             beforeEach: [],
-  //           },
-  //         },
-  //         "postcss-custom-media": {},
-  //         autoprefixer: {},
-  //       },
-  //     },
-  //   },
-
-  //   // @ts-ignore
-  //   transpile: [
-  //     "@thenightleague/shared",
-  //     "tailwindcss/plugin",
-  //     "lodash-es",
-  //     "blaze-slider",
-  //     "vee-validate/dist/rules",
-  //   ],
-  // },
+    // @ts-ignore
+    transpile: [
+      "@thenightleague/shared",
+      "tailwindcss/plugin",
+      "lodash-es",
+      "blaze-slider",
+      "vee-validate/dist/rules",
+    ],
+  },
 });
