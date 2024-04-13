@@ -13,14 +13,18 @@
     </div>
 
     <picture
-      class="relative mx-1 md:mx-10 hover:scale-105 transition-all duration-500 hover:rounded-3xl"
+      class="relative mx-1 md:mx-10 hover:scale-105 transition-all duration-500 shadow-lg rounded-3xl"
     >
-      <source media="(min-width: 640px)" srcset="/image10-large.png" />
+      <source
+        media="(min-width: 640px)"
+        srcset="/image10-large.png"
+        class="rounded-3xl"
+      />
 
       <img
         src="/image10-small.png"
         alt="Home hero image"
-        class="scale-85 opacity-0 relative w-full z-20"
+        class="scale-85 opacity-0 relative w-full z-20 rounded-3xl"
       />
       <div
         id="glassy-bg"

@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+  modules: ["@nuxtjs/tailwindcss"],
 
   app: {
     head: {
@@ -41,11 +42,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: [
-    "~/assets/css/main.css",
-    "@fontsource-variable/nunito",
-    "@fontsource-variable/nunito-sans",
-  ],
+  css: ["@fontsource-variable/nunito", "@fontsource-variable/nunito-sans"],
   postcss: {
     plugins: {
       tailwindcss: {},

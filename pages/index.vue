@@ -1,17 +1,15 @@
 <template>
-  <NuxtLayout>
-    <main class="max-w-md md:max-w-full m-auto p-12 text-center space-y-36">
-      <HomeHero />
+  <main class="max-w-md md:max-w-full m-auto p-12 text-center space-y-36">
+    <HomeHero />
 
-      <UsersSaid />
+    <UsersSaid />
 
-      <RobustFeatures />
+    <RobustFeatures />
 
-      <FocusSection />
+    <FocusSection />
 
-      <TryIt />
-    </main>
-  </NuxtLayout>
+    <TryIt />
+  </main>
 </template>
 
 <script setup lang="ts"></script>

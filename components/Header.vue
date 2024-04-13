@@ -4,9 +4,7 @@
     class="flex items-center justify-between"
     :class="{ 'bg-white': isFooter }"
   >
-    <NuxtLink class="p-3 -m-3" to="/">
-      <Logo />
-    </NuxtLink>
+    <NuxtLink class="p-3 -m-3" to="/"> <Logo /> </NuxtLink>
 
     <p v-if="isFooter" class="text-xs text-black">
       &copy; {{ new Date().getFullYear() }} Flow Rise
