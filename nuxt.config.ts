@@ -52,33 +52,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  buildAssetsDir: "assets",
-  imports: {
-    dirs: ["constant"],
-  },
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          "postcss-import": {},
-          "postcss-each": {
-            plugins: {
-              beforeEach: [],
-            },
-          },
-          "postcss-custom-media": {},
-          autoprefixer: {},
-        },
-      },
-    },
-
-    // @ts-ignore
-    transpile: [
-      "@thenightleague/shared",
-      "tailwindcss/plugin",
-      "lodash-es",
-      "blaze-slider",
-      "vee-validate/dist/rules",
-    ],
+  routeRules: {
+    "/**": { swr: true },
   },
 });
