@@ -7,9 +7,6 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: "/flowRise-Nuxt3/", // baseURL: '/<repository>/'
-    buildAssetsDir: "assets", // don't use "_" at the begining of the folder name to avoids nojkill conflict
-
     head: {
       title: "Flow Rise",
       htmlAttrs: {
@@ -57,32 +54,34 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  routeRules: {
-    "/**": { swr: true },
+  buildAssetsDir: "assets",
+  imports: {
+    dirs: ["constant"],
   },
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          "postcss-import": {},
-          "postcss-each": {
-            plugins: {
-              beforeEach: [],
-            },
-          },
-          "postcss-custom-media": {},
-          autoprefixer: {},
-        },
-      },
-    },
 
-    // @ts-ignore
-    transpile: [
-      "@thenightleague/shared",
-      "tailwindcss/plugin",
-      "lodash-es",
-      "blaze-slider",
-      "vee-validate/dist/rules",
-    ],
-  },
+  // build: {
+  //   postcss: {
+  //     postcssOptions: {
+  //       plugins: {
+  //         "postcss-import": {},
+  //         "postcss-each": {
+  //           plugins: {
+  //             beforeEach: [],
+  //           },
+  //         },
+  //         "postcss-custom-media": {},
+  //         autoprefixer: {},
+  //       },
+  //     },
+  //   },
+
+  //   // @ts-ignore
+  //   transpile: [
+  //     "@thenightleague/shared",
+  //     "tailwindcss/plugin",
+  //     "lodash-es",
+  //     "blaze-slider",
+  //     "vee-validate/dist/rules",
+  //   ],
+  // },
 });

@@ -37,8 +37,8 @@
 <script setup lang="ts">
 import gsap from "gsap";
 
-const tl = gsap.timeline();
 onMounted(() => {
+  const tl = gsap.timeline();
   gsap.to("#glassy-bg", {
     repeat: -1,
     scale: 1.5,

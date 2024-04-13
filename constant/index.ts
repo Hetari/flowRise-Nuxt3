@@ -1,19 +1,3 @@
-type navLink = {
-  name: string;
-  path: string;
-};
-
-const navLinks: navLink[] = [
-  {
-    name: "Features",
-    path: "/features",
-  },
-  {
-    name: "About",
-    path: "/about",
-  },
-];
-
 type user = {
   id: number;
   name: string;
@@ -77,4 +61,4 @@ const FocusCardInfo: focusCard[] = [
   },
 ];
 
-export { navLinks, usersCommunity, FocusCardInfo };
+export { usersCommunity, FocusCardInfo };
