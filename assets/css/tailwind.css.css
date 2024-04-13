@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply overflow-x-hidden
+}
+
+@layer utilities {
+    body {
+        /* Theme goes here */
+        @apply text-slate-700;
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply font-bold font-body leading-10;
+    }
+
+    h1 {
+        @apply text-7xl;
+    }
+
+    h2 {
+        @apply text-5xl;
+    }
+
+    h3 {
+        @apply text-4xl;
+    }
+
+    .text-body-large,
+    .text-body-normal,
+    .text-body-small {
+        @apply font-heading leading-10 font-normal;
+    }
+
+    .text-body-large {
+        @apply text-5xl font-bold md:text-7xl;
+    }
+
+    .text-body-normal {
+        /* leading-loose */
+        @apply font-semibold text-4xl md:text-5xl;
+    }
+
+    .text-body-small {
+        @apply text-lg;
+    }
+
+    .button {
+        @apply font-body font-bold text-base;
+    }
+
+    .nav-link {
+        @apply hover:text-slate-900 transition-[color] duration-200 font-body font-normal text-base;
+    }
+
+    .router-link-active {
+        @apply text-transparent/60;
+    }
+}
