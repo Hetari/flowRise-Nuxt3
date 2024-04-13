@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import gsap from "gsap";
+const { $gsap } = useNuxtApp();
 
 const props = defineProps<{
   user: {
@@ -36,7 +36,7 @@ const userImage = computed(() => {
 });
 
 onMounted(() => {
-  gsap.to("#user-card", {
+  $gsap.to("#user-card", {
     scale: 1,
     duration: 0.2,
     ease: "sine.inOut",
@@ -47,7 +47,7 @@ onMounted(() => {
       scrub: true,
     },
   });
-  gsap.to("#comment", {
+  $gsap.to("#comment", {
     opacity: 1,
     y: 0,
     duration: 0.5,
@@ -60,7 +60,7 @@ onMounted(() => {
       scrub: true,
     },
   });
-  gsap.to("#comment-author", {
+  $gsap.to("#comment-author", {
     opacity: 1,
     y: 0,
     duration: 0.5,

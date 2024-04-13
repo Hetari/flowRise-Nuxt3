@@ -225,10 +225,7 @@
 </template>
 
 <script setup lang="ts">
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-
-gsap.registerPlugin(ScrollTrigger);
+const { $gsap } = useNuxtApp();
 
 const svgSelectors = [
   "#Calendar #lines path:nth-child(1)",
@@ -245,7 +242,7 @@ onMounted(() => {
   //   });
   // });
 
-  gsap.to("#robust-features", {
+  $gsap.to("#robust-features", {
     opacity: 1,
     y: 0,
     scrollTrigger: {
@@ -258,18 +255,19 @@ onMounted(() => {
     ease: "circ.out",
   });
 
-  // gsap.set("#Calendar #dots", { scale: 0.5, transformOrigin: "50% 50%" });
-  // gsap.to("#Calendar #dots", {
-  //   scale: 1,
-  //   scrollTrigger: {
-  //     trigger: "#robust-features",
-  //     start: "top 90%",
-  //     end: "bottom 70%",
-  //     scrub: true,
-  //   },
-  //   duration: 1,
-  //   ease: "circ.out",
-  // });
+  $gsap.set("#Calendar #dots", { scale: 0.5, transformOrigin: "50% 50%" });
+
+  $gsap.to("#Calendar #dots", {
+    scale: 1,
+    scrollTrigger: {
+      trigger: "#robust-features",
+      start: "top 90%",
+      end: "bottom 70%",
+      scrub: true,
+    },
+    duration: 1,
+    ease: "circ.out",
+  });
 
   // svgSelectors.forEach((selector) => {
   //   gsap.to(selector, {

@@ -39,11 +39,11 @@
 </template>
 
 <script setup lang="ts">
-import gsap from "gsap";
+const { $gsap } = useNuxtApp();
 
 onMounted(() => {
-  const tl = gsap.timeline();
-  gsap.to("#glassy-bg", {
+  const tl = $gsap.timeline();
+  tl.to("#glassy-bg", {
     repeat: -1,
     scale: 1.5,
     y: 20,
@@ -57,7 +57,7 @@ onMounted(() => {
 
   tl.to("picture img", {
     scale: 1,
-    boxShadow: "10px 10px 50px 0 rgba(0, 0, 0, 0.2)",
+    // boxShadow: "10px 10px 50px 0 rgba(0, 0, 0, 0.2)",
     opacity: 1,
     duration: 0.5,
     ease: "sine.inOut",

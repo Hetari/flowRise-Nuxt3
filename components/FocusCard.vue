@@ -23,8 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+const { $gsap } = useNuxtApp();
 
 const props = defineProps<{
   card: {
@@ -44,16 +43,15 @@ const cardImage = computed(() => {
 // animation
 
 onMounted(() => {
-  gsap.set(`#image${props.index}`, {
+  $gsap.set(`#image${props.index}`, {
     xPercent: props.pos,
   });
 
-  gsap.set(`#text${props.index}`, {
+  $gsap.set(`#text${props.index}`, {
     xPercent: props.pos * -1,
   });
 
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.to(`#image${props.index}`, {
+  $gsap.to(`#image${props.index}`, {
     xPercent: 0,
     opacity: 1,
     scrollTrigger: {
@@ -66,7 +64,7 @@ onMounted(() => {
     ease: "power4.inOut",
   });
 
-  gsap.to(`#text${props.index}`, {
+  $gsap.to(`#text${props.index}`, {
     xPercent: 0,
     opacity: 1,
     scrollTrigger: {

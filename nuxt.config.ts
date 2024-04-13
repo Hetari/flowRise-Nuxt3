@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
-
   app: {
     head: {
       title: "Flow Rise",
@@ -39,5 +38,4 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["@fontsource-variable/nunito", "@fontsource-variable/nunito-sans"],
 });

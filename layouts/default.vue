@@ -11,9 +11,7 @@
 
 <script setup lang="ts">
 import Lenis from "@studio-freight/lenis";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { onMounted } from "vue";
+const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp();
 
 onMounted(() => {
   const lenis = new Lenis();

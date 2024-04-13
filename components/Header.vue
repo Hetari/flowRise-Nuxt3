@@ -10,13 +10,13 @@
       &copy; {{ new Date().getFullYear() }} Flow Rise
     </p>
 
-    <!-- <ul class="flex gap-10">
+    <ul class="flex gap-10">
       <li v-for="link in navLinks" :key="link.name">
         <NuxtLink :to="link.path" class="nav-link p-3 -m-3">
           {{ link.name }}
         </NuxtLink>
       </li>
-    </ul> -->
+    </ul>
   </Bounded>
 </template>
 

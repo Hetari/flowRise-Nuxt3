@@ -25,10 +25,10 @@
 </template>
 
 <script setup lang="ts">
-import gsap from "gsap";
+const { $gsap } = useNuxtApp();
 
 onMounted(() => {
-  gsap.to("#intro-btn", {
+  $gsap.to("#intro-btn", {
     opacity: 1,
     y: 0,
     duration: 1,
