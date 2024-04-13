@@ -42,8 +42,11 @@
 const { $gsap } = useNuxtApp();
 
 onMounted(() => {
-  const tl = $gsap.timeline();
-  tl.to("#glassy-bg", {
+  const tl = $gsap.timeline({
+    repeatDelay: 2,
+  });
+
+  $gsap.to("#glassy-bg", {
     repeat: -1,
     scale: 1.5,
     y: 20,
@@ -67,7 +70,7 @@ onMounted(() => {
     opacity: 1,
     y: 0,
     delay: 0.2,
-    duration: 1,
+    duration: 0.5,
     ease: "circ.out",
   });
 });
