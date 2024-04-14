@@ -6,6 +6,10 @@ body {
     @apply overflow-x-hidden
 }
 
+#__nuxt {
+    @apply overflow-x-hidden
+}
+
 @layer utilities {
     body {
         /* Theme goes here */

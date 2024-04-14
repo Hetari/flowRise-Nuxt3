@@ -12,18 +12,13 @@
       <Button />
     </div>
 
-    <picture
+    <div
       class="relative mx-1 md:mx-10 hover:scale-105 transition-all duration-500 shadow-lg rounded-3xl"
     >
-      <source
-        media="(min-width: 640px)"
-        srcset="/image10-large.png"
-        class="rounded-3xl"
-      />
-
       <img
-        src="/image10-small.png"
-        alt="Home hero image"
+        id="picture"
+        :src="hero.path"
+        :alt="hero.alt"
         class="scale-85 opacity-0 relative w-full z-20 rounded-3xl"
       />
       <div
@@ -34,12 +29,17 @@
       <!-- <div
         class="absolute -bottom-10 md:-bottom-32 right-0 bg-gradient-to-br from-purple-700 to-cyan-900 size-40 md:size-96 blur-3xl opacity-80 md:opacity-40 z-10"
       ></div> -->
-    </picture>
+    </div>
   </section>
 </template>
 
 <script setup lang="ts">
 const { $gsap } = useNuxtApp();
+
+const hero = {
+  path: "./image10-large.png",
+  alt: "Home hero image",
+};
 
 onMounted(() => {
   const tl = $gsap.timeline({
@@ -58,7 +58,7 @@ onMounted(() => {
     rotate: 360,
   });
 
-  tl.to("picture img", {
+  tl.to("#picture", {
     scale: 1,
     // boxShadow: "10px 10px 50px 0 rgba(0, 0, 0, 0.2)",
     opacity: 1,

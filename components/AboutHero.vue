@@ -13,7 +13,7 @@
     <div class="group w-full rounded-2xl overflow-hidden group/item shadow-lg">
       <img
         class="w-full scale-110 group-hover:scale-100 transition-all duration-300"
-        src="/image 18.png"
+        src="./image 18.png"
         alt="lens"
       />
     </div>
