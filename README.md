@@ -2,6 +2,8 @@
 
 <img src="output.gif" style="width: 100%;"/>
 
+see it in action [here](https://master--velvety-eclair-5642a1.netlify.app/)
+
 ## Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
