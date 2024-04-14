@@ -13,7 +13,7 @@
     <div class="group w-full rounded-2xl overflow-hidden group/item shadow-lg">
       <img
         class="w-full scale-110 group-hover:scale-100 transition-all duration-300"
-        src="./image 18.png"
+        :src="imgPath"
         alt="lens"
       />
     </div>
@@ -22,7 +22,7 @@
 
 <script setup lang="ts">
 const { $gsap } = useNuxtApp();
-
+const imgPath = "./image 18.png";
 onMounted(() => {
   $gsap.to("#intro-btn", {
     opacity: 1,
